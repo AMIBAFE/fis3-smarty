@@ -31,3 +31,21 @@ fis.media('debug').match('*.{js,css,png}',{
 fis.media('go').match(/test|.*\.conf|plugin|.*\.md/,{
   release:false
 })
+  .match('{/site/(**.tpl),/widget/(**.tpl)}',{
+    release:'resources/views/$0'
+  })
+  .match('(**.js)',{
+    release:'public/js/$1'
+  })
+  .match('::image',{
+    release:'public/img/$0'
+  })
+  .match('**.{css,less}',{
+    release:'public/css/$0'
+  })
+  .match('**.{ttf,otf,woff,eot}',{
+    release:'public/font/$0'    
+  })
+  .match('**.{mp4,avi,mkv,swf,wmv}',{
+    release:'public/other/$0'    
+  })
