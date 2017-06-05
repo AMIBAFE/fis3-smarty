@@ -26,3 +26,8 @@ fis.media('debug').match('*.{js,css,png}',{
   useSprite:false,
   optimizer:null
 },true)
+
+//某些资源不产出
+fis.media('go').match(/test|.*\.conf|plugin|.*\.md/,{
+  release:false
+})

@@ -11,6 +11,7 @@
   {%script%}
     require('../../widget/head/head.js');
     require('../../widget/footer/footer.js');
+    require('../../widget/index/index.js');
     $_map = __RESOURCE_MAP__
   {%/script%}
 {%/html%}
