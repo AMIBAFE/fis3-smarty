@@ -1,1 +1,1 @@
-<div class="footer"><img src="footere.png" alt=""></div>
+<div class="footer"></div>

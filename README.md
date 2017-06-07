@@ -1,38 +1,57 @@
 # fis3-smarty
 基于 FIS3 的针对 Smarty 模板的前端工程解决方案
 ========================================
-环境要求
+本地服务器环境要求（后端同学直接跳过）
 -----
 +  安装nodejs   
-地址：[<a href="https://nodejs.org/en/">https://nodejs.org/en/</a>]  
+地址：[<a href="https://nodejs.org/download/release/v4.4.5/node-v4.4.5-x64.msi" target="new view">https://nodejs.org/download/release/v4.4.5/node-v4.4.5-x64.msi</a>]  
 
 +  安装JAVA    
-地址：[<a href="https://java.com/zh_CN/">https://java.com/zh_CN/</a>]  
+地址：[<a href="https://java.com/zh_CN/" target="new view">https://java.com/zh_CN/</a>]  
 
 +  安装php-cgi      
-地址：<a href="https://www.apachefriends.org/zh_cn/index.html">[https://www.apachefriends.org/zh_cn/index.html]</a>  
-*windows用户下载xammp并安装，将xampp/php路径加入到环境变量中。*  
+地址：<a href="https://www.apachefriends.org/zh_cn/index.html" target="new view">[https://www.apachefriends.org/zh_cn/index.html]</a>  
+	- windows用户  
+	下载xammp并安装，将xampp/php路径加入到环境变量中。 
 
-+  安装fis3    
-在命令行输入以下命令  
-	```
-	npm install -g fis3
-	```	
-+  安装fis3-smarty    
-在命令行输入以下命令   
-	```
-	npm install -g fis3-smarty  
-	```
+	- mac用户
+	下载下载xammp并安装  
+		- 使用zsh
+		```
+		$ echo 'export PATH=/Applications/XAMPP/bin:$PATH' >> ~/.zshrc
+		$ source ~/.zshrc
+		```
+		- 使用bash
+		```
+		$ echo 'export PATH=/Applications/XAMPP/bin:$PATH' >> ~/.bashrc
+		$ source ~/.bashrc
+		```
+
+
 
 示例  
 ----
+安装构建工具    
+在命令行输入以下命令  
+```
+npm install -g denkf
+```	
 进入demo目录，执行以下命令对项目模块进行构建
 ```  
-fis3 release  
+foo release  
+```
+为了方便开发，支持文件自动编译，浏览器自动刷新只需要给release命令添加-l参数和-w参数。
+```
+foo release -wl
 ```
 启动本地测试服务进行预览  
 ```
-fis3 server start
+foo server start
+```
+
+后端同学发布项目只需要执行以下命令即可，-d(空格)后面跟发布文件的目录，支持相对路径和绝对路径
+```
+foo release go -d 路径
 ```
 
 +  效果    
@@ -66,5 +85,6 @@ fis3 server start
 +  开发目录    
 地址：[
 <a href="https://github.com/fex-team/fis3-smarty/blob/master/doc/dev.md#%E8%AE%BE%E7%BD%AEsmarty%E5%88%86%E7%95%8C%E7%AC%A6">https://github.com/fex-team/fis3-smarty/blob/master/doc/dev.md#%E8%AE%BE%E7%BD%AEsmarty%E5%88%86%E7%95%8C%E7%AC%A6</a>]
+
 
 
