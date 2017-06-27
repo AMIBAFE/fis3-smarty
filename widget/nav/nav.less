@@ -1,0 +1,125 @@
+.main-navigation {
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.main-navigation .menu {
+    padding: 0;
+    margin: 0
+}
+
+.main-navigation .menu li {
+    list-style: none;
+    display: inline-block;
+    position: relative
+}
+
+.main-navigation .menu li.nav-current {
+    border-bottom: 2px solid #f4645f;
+    margin-bottom: -2px
+}
+
+.main-navigation .menu li.red-dot:after {
+    content: '';
+    display: block;
+    background: red;
+    border-radius: 50%;
+    width: .6em;
+    height: .6em;
+    top: 30%;
+    right: 11px;
+    position: absolute
+}
+
+.main-navigation .menu li a {
+    color: #505050;
+    line-height: 4em;
+    display: block;
+    padding: 0 21px
+}
+
+.main-navigation .menu li:hover>a {
+    color: #f4645f;
+    text-decoration: none
+}
+
+.main-navigation .menu li ul {
+    visibility: hidden;
+    background: #fff;
+    text-align: left;
+    padding: 7px 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    width: 200px;
+    z-index: 999;
+    opacity: 0;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+.main-navigation .menu li ul li {
+    display: block;
+    margin: 0
+}
+
+.main-navigation .menu li ul li a {
+    line-height: 2.5em;
+    color: #505050
+}
+
+.main-navigation .menu li ul:hover>a {
+    color: #f4645f
+}
+
+.main-navigation .menu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%
+}
+
+@media (max-width: 767px) {
+    .main-navigation {
+        text-align:left
+    }
+
+    .main-navigation .menu li {
+        display: block
+    }
+
+    .main-navigation .menu li:hover>a {
+        color: #f4645f;
+        text-decoration: none
+    }
+
+    .main-navigation .menu li ul {
+        visibility: visible;
+        padding: 0 0 0 20px;
+        margin: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        opacity: 1
+    }
+}
+
+.navbar-header {
+    text-align: center
+}
+
+.navbar-header i {
+    height: 56px;
+    line-height: 56px;
+    font-size: 2em;
+    cursor: pointer
+}
+
+@media (min-width: 768px) {
+    .nav-toggle-button {
+        display:none
+    }
+}

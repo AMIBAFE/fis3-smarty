@@ -1,5 +1,6 @@
 fis.require('smarty')(fis);
 fis.set('namespace', 'project');
+fis.set('project.fileType.text', 'es6');
 
 //js模块化
 fis.hook('commonjs',{
@@ -13,7 +14,18 @@ fis.match('/js-modules/**.js', {
 fis.match('/widget/**/**.js', {
   isMod: true
 },true);
-
+fis.match('*.es6', {
+    isMod:true,
+    rExt: '.js',
+    parser: fis.plugin('es6-babel', {})
+});
+//加CSS3前缀
+fis.match('*.{css,less}',{
+   preprocessor: fis.plugin('autoprefixer', {
+		"browsers": ["Android >= 2.1", "iOS >= 4", "ie >= 8", "firefox >= 15"],
+		"cascade": true
+	})
+})
 //编译sass文件
 fis.match('**.{scss,sass}', {
 	rExt: '.css',

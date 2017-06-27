@@ -2,7 +2,7 @@
 {%html%}
   {%head%}
     <meta charset='utf-8'>
-    <title>{%$site.title%}</title>
+    <title>webDevelop</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%require name="project:css-modules/bootstrap/bootstrap.min.css"%}
@@ -12,8 +12,8 @@
   {%/head%}
   {%body class='home-template'%}
       {%widget name="project:widget/head/head.tpl"%}
-      {%widget name="project:widget/nav/nav.tpl"%}            
-      {%widget name="project:widget/contain/contain.tpl"%}       
+      {%widget name="project:widget/nav/nav.tpl"%}                  
+      {%widget name="project:widget/webDevelopC/webDevelopC.tpl"%}                  
   {%/body%}
   {%script%}
     require('../../widget/head/head.js');
