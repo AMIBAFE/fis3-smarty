@@ -16,7 +16,7 @@
                         </a>
                     </div>
                     <div class="post-content">
-                        <p>本地环境搭建，开发注意事项。</p>
+                        <p>本地环境搭建注意事项</p>
                     </div>
                     <div class="post-permalink"><a href="../setUpWeb/setUpWeb">阅读全文</a>
                     </div>
@@ -39,7 +39,7 @@
                         <p><a href="https://nodejs.org/en/">安装Node.js (PS:建议版本v4.4.5)</a></p>
                         <p>执行以下命令 (PS:Mac用户请加上sudo)</p>
                         <pre>
-                            <code>sudo npm install -g denkf</code>
+                            <code>npm install -g denkf</code>
                         </pre>
                         <p>发布命令-d(空格)后面跟发布文件的目录，支持相对路径和绝对路径</p>
                         <pre>

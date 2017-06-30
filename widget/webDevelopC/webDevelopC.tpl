@@ -62,6 +62,14 @@ template 相对于 www/template 目录
 /test/site/index/index.php
                                 </code>
                             </pre>
+                            <p><strong>ES6</strong><br>ES6语法需要JS文件名改为es6即可使用。对于 UI组件，包含 es6 的组件，通过前端模版化框架提供的接口进行调用。</p>
+                            <pre>
+                                <code>
+require('./a.es6'); // 相对路径
+require('/widget/cs/a.es6'); // 相对于模板根目录的绝对路径。
+require('project:widget/cs/a.es6'); // 使用 ID 进行调用，默认ID为project
+                                </code>
+                            </pre>
                         </div>
                     </div>
                     <footer class="post-footer clearfix"></footer>

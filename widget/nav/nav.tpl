@@ -11,6 +11,8 @@
                         </li>
                         <li role="presentation"><a href="../webDevelop/webDevelop">前端开发文档</a>
                         </li>
+                        <li role="presentation"><a href="../webDevelop/webDevelop">测试ajax</a>
+                        </li>
                     </ul>
                 </div>
             </div>

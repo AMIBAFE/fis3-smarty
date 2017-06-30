@@ -6,12 +6,9 @@
                     <div class="post-head">
                         <h1 class="post-title">
                             <a href="###">
-                                前端开发手册
+                                环境搭建
                             </a>
                         </h1>
-                        <div class="post-meta"><span class="author">作者：<a target="_blank">ppk</a></span> 
-                            <time class="post-date">2017年06月27日</time>
-                        </div>
                     </div>
                     <div class="post-content">
                         <h2>本地服务器环境要求</h1>
