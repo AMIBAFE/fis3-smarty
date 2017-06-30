@@ -8,12 +8,13 @@ $('.nav-toggle-button').on('click',function(){
         $(this).addClass('false');
     }  
 })
-$('.index').on('click',function(){
+$('#ajax').on('click',function(){
     $.ajax({
         url:'/ajax.json',
         method:'POST',
         dataType:'json'
     }).done(function(res){
+        alert('请求成功');
         console.log(res);
     })
 })
